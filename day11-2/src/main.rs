@@ -3,10 +3,10 @@ use std::fs;
 
 fn main() {
     let puzzle_input = fs::read_to_string("puzzle_input.txt").unwrap();
-    println!("{}", solve_1(puzzle_input));
+    println!("{}", solve_2(puzzle_input));
 }
 
-pub fn solve_1(puzzle_input: String) -> usize {
+pub fn solve_2(puzzle_input: String) -> usize {
     let mut indices: Vec<(usize, usize)> = Vec::new();
     for (y, line) in puzzle_input.lines().enumerate() {
         for (x, entry) in line.chars().enumerate() {
