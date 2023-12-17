@@ -1,4 +1,4 @@
-use std::{collections::HashMap, fs, os::unix::ffi::OsStrExt, str::from_utf8};
+use std::fs;
 
 fn main() {
     let puzzle_input = fs::read_to_string("puzzle_input.txt").unwrap();
